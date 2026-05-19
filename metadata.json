@@ -1,0 +1,6 @@
+{
+  "name": "SB Suplementos - Artro Balance Plus",
+  "description": "Site de vendas premium para suplementos articulares com painel administrativo e integração Firebase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

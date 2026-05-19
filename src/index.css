@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand-navy: #002B49;
+  --color-brand-red: #D62828;
+  --color-brand-slate: #F1F5F9;
+  --color-brand-green: #25D366;
+  --color-brand-gold: #FFD700;
+  --color-clinical-white: #FFFFFF;
+  --color-clinical-bg: #FFFFFF;
+}
+
+@keyframes pulse-red {
+  0% { box-shadow: 0 0 0 0 rgba(214, 40, 40, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(214, 40, 40, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(214, 40, 40, 0); }
+}
+
+.pulse-urgent {
+  animation: pulse-red 2s infinite;
+}
+
+.bg-gradient-extreme {
+  background: linear-gradient(135deg, #002B49 0%, #D62828 100%);
+}
+
+
+@layer base {
+  body {
+    @apply bg-clinical-bg text-slate-800 font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-extrabold text-brand-navy tracking-tight;
+  }
+}
+
+.geometric-border {
+  @apply border-2 border-slate-200 rounded-2xl transition-all;
+}
+
+.brand-shadow {
+  box-shadow: 0 10px 30px rgba(0, 43, 73, 0.1);
+}
