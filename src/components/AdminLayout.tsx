@@ -17,9 +17,9 @@ export function AdminLayout({ children }: { children: React.ReactNode }) {
       {/* Sidebar */}
       <aside className="w-64 bg-brand-navy text-white flex flex-col border-r-4 border-brand-red">
         <div className="p-6 border-b border-white/10 flex flex-col items-center gap-4">
-          <div className="w-20 h-20 bg-white rounded-full p-2 shadow-xl">
+          <div className="w-20 h-20 flex items-center justify-center p-1">
              <img 
-               src="https://i.postimg.cc/y8tch66x/Chat-GPT-Image-19-de-mai-de-2026-12-18-12.png" 
+               src="https://i.postimg.cc/7LDKCC00/701597326-1383356700288999-7114571315254824173-n-(1).jpg" 
                alt="Logo" 
                className="w-full h-full object-contain"
              />
@@ -77,9 +77,9 @@ export function AdminLayout({ children }: { children: React.ReactNode }) {
           <h2 className="text-slate-800 font-sans text-sm font-medium">Painel Administrativo</h2>
           <div className="flex items-center gap-4">
             <span className="text-xs text-slate-400">{auth.currentUser?.email}</span>
-            <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center p-1">
+            <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center p-1 border border-slate-100">
                <img 
-                 src="https://i.postimg.cc/y8tch66x/Chat-GPT-Image-19-de-mai-de-2026-12-18-12.png" 
+                 src="https://i.postimg.cc/7LDKCC00/701597326-1383356700288999-7114571315254824173-n-(1).jpg" 
                  alt="Avatar" 
                  className="w-full h-full object-contain"
                />

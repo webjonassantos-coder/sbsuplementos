@@ -4,7 +4,8 @@ import { Product, SiteSettings } from '../types';
 import { DEFAULT_SETTINGS, DEFAULT_PRODUCTS } from '../constants';
 import { Hero } from '../components/Hero';
 import { Ingredients } from '../components/Ingredients';
-import { ProductVitrine } from '../components/ProductVitrine';
+import { ProductCatalog } from '../components/ProductCatalog';
+import { PurchaseOptions } from '../components/PurchaseOptions';
 import { FloatingAI } from '../components/FloatingAI';
 import { motion } from 'motion/react';
 import { Shield, Truck, CreditCard, RotateCcw, MessageCircle } from 'lucide-react';
@@ -94,16 +95,16 @@ export function HomePage() {
       <nav className="h-20 bg-brand-navy sticky top-0 z-40 border-b-4 border-brand-red flex items-center text-white">
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-3">
-             <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center p-2 shadow-inner">
+             <div className="w-16 h-16 flex items-center justify-center p-1">
                 <img 
-                  src="https://i.postimg.cc/y8tch66x/Chat-GPT-Image-19-de-mai-de-2026-12-18-12.png" 
+                  src="https://i.postimg.cc/7LDKCC00/701597326-1383356700288999-7114571315254824173-n-(1).jpg" 
                   alt="Logo" 
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain drop-shadow-lg"
                 />
              </div>
              <div>
                <span className="text-xl font-black tracking-tight block leading-none">{settings.storeName.toUpperCase()}</span>
-               <span className="text-[8px] uppercase tracking-widest text-white/50">Advanced Health Solutions</span>
+               <span className="text-[8px] uppercase tracking-widest text-white/40">Advanced Clinical Nutrition</span>
              </div>
           </div>
           <div className="hidden md:flex gap-8 text-[11px] font-bold uppercase tracking-widest">
@@ -157,7 +158,9 @@ export function HomePage() {
         <Ingredients />
       </div>
 
-      <ProductVitrine products={products} settings={settings} />
+      <ProductCatalog />
+      
+      <PurchaseOptions settings={settings} />
 
       <WhatsAppReviews />
 
@@ -191,7 +194,16 @@ export function HomePage() {
         <div className="container mx-auto px-6 mt-8">
           <div className="grid md:grid-cols-4 gap-12 mb-16">
             <div className="col-span-2">
-               <h4 className="text-white font-black text-2xl mb-6 uppercase tracking-tight">{settings.storeName}</h4>
+               <div className="flex items-center gap-3 mb-6">
+                 <div className="w-12 h-12 flex items-center justify-center p-1 bg-white/5 rounded-xl border border-white/10">
+                   <img 
+                     src="https://i.postimg.cc/7LDKCC00/701597326-1383356700288999-7114571315254824173-n-(1).jpg" 
+                     alt="Logo" 
+                     className="w-full h-full object-contain"
+                   />
+                 </div>
+                 <h4 className="text-white font-black text-2xl uppercase tracking-tight">{settings.storeName}</h4>
+               </div>
                <p className="text-sm max-w-xs leading-relaxed">
                  Sua saúde articular é nossa prioridade. Desenvolvemos soluções baseadas em ativos naturais de alta performance para garantir seu bem-estar diário.
                </p>

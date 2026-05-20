@@ -52,10 +52,19 @@ export function LoginPage() {
 
   return (
     <div className="min-h-screen bg-clinical-bg flex items-center justify-center p-6">
-      <div className="max-w-md w-full bg-white rounded-2xl shadow-2xl overflow-hidden brand-shadow border border-slate-100">
-        <div className="bg-brand-navy p-10 text-center border-b-4 border-brand-red">
-          <h1 className="text-3xl font-black text-white m-0 uppercase tracking-tighter">SB Admin</h1>
-          <p className="text-white/60 text-[10px] font-bold uppercase tracking-widest mt-2">Advanced Health Panel</p>
+      <div className="max-w-md w-full bg-white rounded-3xl shadow-2xl overflow-hidden brand-shadow border border-slate-100">
+        <div className="bg-[#030712] p-10 text-center border-b-4 border-brand-red flex flex-col items-center gap-4">
+           <div className="w-20 h-20 flex items-center justify-center p-1">
+              <img 
+                src="https://i.postimg.cc/7LDKCC00/701597326-1383356700288999-7114571315254824173-n-(1).jpg" 
+                alt="Logo" 
+                className="w-full h-full object-contain"
+              />
+           </div>
+          <div>
+            <h1 className="text-2xl font-black text-white m-0 uppercase tracking-tighter">Admin Portal</h1>
+            <p className="text-white/40 text-[9px] font-bold uppercase tracking-[0.2em] mt-1">Advanced Clinical Nutrition</p>
+          </div>
         </div>
         
         <div className="p-10">
